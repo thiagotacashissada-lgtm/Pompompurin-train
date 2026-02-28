@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("img/pompompurin.jpeg") center/cover no-repeat;
+    opacity: 0.15;
+    z-index: -1;
+}
+/* Header */
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+
+}
+
+.logo {
+    font-size:  22px;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #ff8800;
+}
+
+/* Main */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+    p {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+/* BOTÃO */
+.btn {
+    padding: 15px 35px;
+    background-color: #ff8800;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+    transform: scale(1.1);
+}
